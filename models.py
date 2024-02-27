@@ -78,7 +78,18 @@ class Name(StringField):
         return self.value 
 
     def __str__(self):
+        print(f"Debug: Name __str__ called with value: {self.value}")
         return self.value 
+
+    @property
+    def value(self):
+        return self.__value
+
+    @value.setter
+    def value(self, new_value):
+        if not self.is_valid(new_value):
+            raise ValueError(f"Invalid value for {self.__class__.__name__.lower()}")
+        self.__value = new_value   
 
 class Phone(StringField):
     def is_valid(self, value):
@@ -156,7 +167,10 @@ class Record:
         return record_data
 
     def __str__(self):
-        return f"{self.name.__str__()}: {', '.join(str(phone) for phone in self.phones)}"
+        name_str = self.name.__str__()  
+        phone_str = ', '.join(str(phone) for phone in self.phones)
+        print(f"Debug: Record __str__ called with name: {name_str}")
+        return f"{name_str}: {phone_str}"
 
 class AddressBook(UserDict):
     def __init__(self, *args, **kwargs):
