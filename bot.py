@@ -14,7 +14,7 @@ class DataHandler:
             data = {
                 "records": [record.__json__() for record in records]
             }
-            json.dump(data, file)
+            json.dump(data, file, indent=2)
 
     def load_data(self):
         try:

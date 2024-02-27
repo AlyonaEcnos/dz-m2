@@ -1,1 +1,25 @@
-{"records": [{"name": "aa", "phones": ["1234567891"], "birthday": null}, {"name": "abv", "phones": ["2222222222"], "birthday": null}]}
+{
+  "records": [
+    {
+      "name": "aa",
+      "phones": [
+        "1234567891"
+      ],
+      "birthday": null
+    },
+    {
+      "name": "abv",
+      "phones": [
+        "2222222222"
+      ],
+      "birthday": null
+    },
+    {
+      "name": "bvc",
+      "phones": [
+        "5553334441"
+      ],
+      "birthday": null
+    }
+  ]
+}

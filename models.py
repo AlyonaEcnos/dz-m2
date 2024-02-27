@@ -78,7 +78,6 @@ class Name(StringField):
         return self.value 
 
     def __str__(self):
-        print(f"Debug: Name __str__ called with value: {self.value}")
         return self.value 
 
     @property
@@ -169,7 +168,6 @@ class Record:
     def __str__(self):
         name_str = self.name.__str__()  
         phone_str = ', '.join(str(phone) for phone in self.phones)
-        print(f"Debug: Record __str__ called with name: {name_str}")
         return f"{name_str}: {phone_str}"
 
 class AddressBook(UserDict):
