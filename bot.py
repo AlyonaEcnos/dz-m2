@@ -242,5 +242,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-    name = Name("John")
-    print(name)  # Убедитесь, что выводит "John
