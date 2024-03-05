@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dz-m2"
+version = "0.1.0"
+description = ""
+authors = ["Alyona <ecnosss@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+datetime = "^5.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
